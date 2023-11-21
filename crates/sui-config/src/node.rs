@@ -210,7 +210,7 @@ pub fn default_enable_index_processing() -> bool {
 }
 
 fn default_grpc_address() -> Multiaddr {
-    "/ip4/0.0.0.0/tcp/8080".parse().unwrap()
+    "/ip4/0.0.0.0/tcp/6080".parse().unwrap()
 }
 fn default_authority_key_pair() -> AuthorityKeyPairWithPath {
     AuthorityKeyPairWithPath::new(get_key_pair_from_rng::<AuthorityKeyPair, _>(&mut OsRng).1)
